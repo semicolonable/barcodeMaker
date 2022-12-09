@@ -4,6 +4,8 @@
 
 API-source : https://github.com/metafloor/bwip-js/wiki/Online-Barcode-API
 
+사이트 : https://semicolonable.github.io/barcodeMaker.github.io/BarcodeMaker.html
+
 
 english---------------------
 
@@ -12,3 +14,5 @@ Created to help with barcode recognition of the disposable cup deposit system pr
 You can use it without asking for personal information.
 
 API-source: https://github.com/metafloor/bzip-js/wiki/Online-Barcode-API
+
+site : https://semicolonable.github.io/barcodeMaker.github.io/BarcodeMaker.html
