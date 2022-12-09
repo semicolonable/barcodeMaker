@@ -8,7 +8,7 @@
 
     <script lang="JavaScript">
         let barcodeNumber;
-        barcodeNumber = prompt("바코드의 숫자를 입력해주세요.");
+        barcodeNumber = prompt("바코드의 숫자를 입력해주세요.","");
             var link = 'http://bwipjs-api.metafloor.com/?bcid=code128&text='+barcodeNumber+'&scale=3&includetext&backgroundcolor=ffffff&paddingwidth=20&paddingheight=20';
 
         function goToLink(barcodeNumber){
