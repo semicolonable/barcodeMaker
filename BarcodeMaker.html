@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            바코드 간편 생성기
+        </title>
+    </head>
+
+    <script lang="JavaScript">
+        let barcodeNumber;
+        barcodeNumber = prompt("바코드의 숫자를 입력해주세요.", "입력");
+            var link = 'http://bwipjs-api.metafloor.com/?bcid=code128&text='+barcodeNumber+'&scale=3&includetext&backgroundcolor=ffffff&paddingwidth=20&paddingheight=20';
+
+        function goToLink(barcodeNumber){
+            location.replace(link);
+        }
+    </script>
+
+    <body>
+        <center>
+        <h1 style = "font-size: 6vh; margin-bottom: 0;">바코드 간편 생성기</h1>
+        
+        <script lang="JavaScript">
+            document.write("<img style=\"width:45vh; height:35vh;\" src=\"" + link + "\"> ");
+            document.write("<p></p>")
+        </script>
+        <button style = "margin-top: -3vh; text-align: center; width: 15vh; height: 10vh; font-size: 2.5vh;";  onclick = "location.reload()">새로고침</button>
+        <div class="readMe" style="margin : 3vh; font-size: 3vh; float:left">
+            <ul>
+                <li>생성된 바코드를 회수기의 바코드 인식부에 인식시켜 주세요.</li>
+                <li>화면의 밝기가 어두우면 인식이 어려울 수 있으니 밝기를 조정해주세요.</li>
+        </ul>
+        </div>
+
+        <div class="explain1" >본 페이지는 1회용 컵 보증금 제도를 돕기 위한 비영리적인 개인 홈페이지이며, 카페 및 환경부와 관련이 없습니다.</div>
+        <div class="namecard" style="margin:1vh; font-size: 2vh;" >제작자 e-mail : semicolonable@gmail.com</div>
+        <div class="API-source">API-source : <a href="https://github.com/metafloor/bwip-js/wiki/Online-Barcode-API">https://github.com/metafloor/bwip-js/wiki/Online-Barcode-API</a></div>
+
+        </center>
+    </body>
+</html>
